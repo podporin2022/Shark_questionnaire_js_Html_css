@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="form/css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Диагностика тазового дна</title>
+</head>
+<body>
+<div class="wrapper">
+	<main>
+		<div class="backgroud-container">
+			<img src="img/back_1.png" alt="Background">
+		</div>
+		<div class="top-block">
+
+			<div class="main-textblock">
+				<div class="text-and-photo">
+					<div class="text">
+						<h3>Тест</h3>
+						<h4>Диагностика тазового дна за 1 минуту</h4>
+						<span class="heart">
+						<img src="img/photo.svg" alt="Heart">
+					</span>
+					</div>
+					<div class="image-block">
+						<div class="photo image-holder">
+							<img src="./img/damaserdca.jpg" alt="Doctor">
+						</div>
+					</div>
+
+				</div>
+				<div class="bottom-text">
+					<p>Пройдите тест и получите индивидуальные рекомендации от
+						врача Людмилы Шупенюк по решению проблем органов малого таза</p>
+				</div>
+			</div>
+		</div>
+		<div class="result">
+			<p>ПОЛУЧИТЬ РЕКОМЕНДАЦИИ</p>
+		</div>
+		<div class="test">
+			<button class="start button">
+				Пройти тест
+			</button>
+			<div class="survey">
+				<div class="question-number">
+					<span class="from"></span>/<span class="of"></span>
+				</div>
+				<div class="all-questions">
+					<div class="question">
+						<p>Есть ли у вас хронические тазовые боли, боли в пояснице?
+							Испытываете ли дискомфорт внизу живота?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Есть ли попадание воздуха во влагалище
+							при занятиях спортом, физической нагрузке,
+							во время полового контакта или попадание
+							воды во время приема ванны?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p  class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Бывает ли ощущение
+							инородного тела во влагалище
+							или тяжести внизу живота?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Беспокоит ли вас дискомфорт,
+							боль во время полового акта?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>В зеркале видите, что живот опустился вниз.
+							Пупок находится ниже средней линии?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Есть ли подтекание мочи во время кашля, смеха,
+							чихания, прыжков, бега, любых сотрясающих тело движениях?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Есть ли сложности с мочеиспусканием
+							- слабая струя, прерывистая струя,
+							приходится тужиться?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="question">
+						<p>Беспокоит ли вас частое мочеиспускание,
+							ночные пробуждения по этому поводу?</p>
+						<div class="answer">
+							<p class="check"><span></span>Да</p>
+							<p class="check"><span></span>Нет</p>
+						</div>
+					</div>
+					<div class="button-block">
+						<button class="next button">
+							Следующий вопрос
+						</button>
+						<button class="final button">
+							Узнать результат
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div id="toform" class="form" style="display: none;">
+				<form class="card-form" action="order.php" method="post">
+					<div style="display: none">
+						<?php if (isset($_GET["utm_source"])) : ?><input type="hidden" name="utm_source" value="<?=$_GET["
+																		 utm_source"];?>"
+						/><?php endif; ?><?php if (isset($_GET["utm_content"])) : ?><input type="hidden" name="utm_content"
+																						   value="<?=$_GET[" utm_content"];?>"
+						/><?php endif; ?><?php if (isset($_GET["utm_term"])) : ?><input type="hidden" name="utm_term"
+																						value="<?=$_GET[" utm_term"];?>"
+						/><?php endif; ?><?php if (isset($_GET["utm_campaign"])) : ?><input type="hidden" name="utm_campaign"
+																							value="<?=$_GET[" utm_campaign"];?>"
+						/><?php endif; ?><?php if (isset($_GET["utm_medium"])) : ?><input type="hidden" name="utm_medium"
+																						  value="<?=$_GET[" utm_medium"];?>"
+						/><?php endif; ?><?php if (isset($_GET["subid"])) : ?><input type="hidden" name="subid"
+																					 value="<?=$_GET[" subid"];?>"
+						/><?php endif; ?><?php if (isset($_GET["fbclid"])) : ?><input type="hidden" name="fbclid"
+																					  value="<?=$_GET[" fbclid"];?>"
+						/><?php endif; ?>
+						<input type="hidden" name="pixelID" value=<?php echo '"' . $pixelID . '"' ?>>
+					</div>
+					<div class="alert-text-and-image">
+						<div class="alert">
+							<h2><strong>ВНИМАНИЕ!</strong></h2>
+							<div class="timer">
+								<p class="to_date">государственная программа до <br><span><script type="text/javascript">
+										d = new Date(); p = new Date(d.getTime() + 0*86400000);
+										monthA = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+										if (p.getDate() < 10)
+											document.write('0' + p.getDate() + '.' + monthA[p.getMonth()] + '.' + p.getFullYear());
+										else
+											document.write(p.getDate() + '.' + monthA[p.getMonth()] + '.' + p.getFullYear());
+									</script></span></p>
+								<p class="includes">включительно!</p>
+							</div>
+						</div>
+						<!--Изображение продукта-->
+						<div class="product_image_holder">
+							<img src="./img/uronistin.png" alt="Uronistin" style="top: 10px;">
+						</div>
+					</div>
+					<!--/-->
+					<!--Timer-->
+					<div class="timer-and-form">
+					<div class="timer-to-and-day">
+						<h4 class="timer-label">Оставшееся время</h4>
+						<div class="timer-labels">
+							<span class="result-hour"></span> :
+							<span class="result-minute"></span> :
+							<span class="result-second"></span>
+						</div>
+
+					</div>
+						<div class="all-inputs">
+							<div class="input">
+								<input type="text" class="input-field" name="name" required/>
+								<label class="input-label">Ваше имя</label>
+							</div>
+							<div class="input tel_input">
+								<input type="tel" name="phone" class="input-field tel_field" required
+									   onclick="(function(event){if (!event.target.value.length){event.target.value='+38';}})(event)"
+									   oninput="(function(event){const x=event.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                                   event.target.value='+38' + (x[4] ? ' (' + x[3] + ') ' : '' + x[3]) + x[4] + (x[5] ? '-' + x[5] : '') + (x[6] ? '-' + x[6] : '');})(event)"
+									   pattern="^\+38\s[\(]?0(39|67|68|96|97|98|50|66|95|99|63|73|93|91|92|94)[\)]\s\d{3}[\-]\d{2}[\-]\d{2}$"
+									   title="Формат: +38 (0XX) XXX-XX-XX. Проверьте правильность кода оператора."
+									   valid/>
+								<label id="form_tel" class="input-label">Ваш телефон</label>
+							</div>
+							<div class="action">
+								<button class="action-button shine-button">Получить по 22 грн.*</button>
+								<div class="card-info">
+									*при заказе курса
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+	</main>
+</div>
+<script src="./scripts/first.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="form/scripts/repairLabel.js"></script>
+<script src="form/scripts/timeToEndDay.js"></script>
+</body>
+</html>
